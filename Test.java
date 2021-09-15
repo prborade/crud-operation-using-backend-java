@@ -7,15 +7,20 @@ import java.sql.Connection;
 	public static void main(String[] args) {
 		Test objTest=new Test();
 	        //insert data
-		objTest.create_data("1", "anju", "anjn@gmail.com");
-		objTest.create_data("2", "jawad", "jawad@gmail.com");
+		objTest.create_data("1", "pooja", "pooja123@gmail.com");
+		objTest.create_data("4", "shobha", "shobha@gmail.com");
+		objTest.create_data("3", "rudra", "rudra55@gmail.com");
+
 	        //read data
 		objTest.read_data("1");
-		objTest.read_data("2");
-	        //update data
-		objTest.update_data("2", "33", "jawad2", "jawad2@gmail");
-	      
+		objTest.read_data("4");
+		objTest.read_data("3");
 		
+	        //update data
+		objTest.update_data("4","2","shobha", "shobha@gmail.com");
+		
+	      //delete
+		objTest.delete_data("3");
 	}
 
 	public void create_data(String sl_no,String name,String email){
